@@ -1,0 +1,33 @@
+I want to create a React Native iOS app that helps users set and track daily goals with smart notifications. The app should have the following features:
+1. Firebase Integration:
+Authentication (email/password)
+Firestore database for storing goals and notifications
+Firebase Cloud Messaging for push notifications
+Core Screens:
+Login/Register screen with email/password authentication
+Dashboard showing goal completion statistics and active goals
+Alarm setup screen for setting daily goals
+Goal input screen that appears when alarm triggers
+Smart Features:
+Integration with OpenAI's GPT-3.5 to analyze goals and suggest optimal reminder times
+Local notifications using PushNotificationIOS
+Dark/Light theme support with context-based theme management
+Offline support with AsyncStorage for data persistence
+Technical Requirements:
+Use React Navigation for screen management
+Implement proper error handling and loading states
+Use context for auth and theme management
+Environment variable support for API keys
+Firebase config setup
+The app should follow the existing structure where:
+Authentication logic is handled in AuthContext
+Theme management is handled in ThemeContext
+Notifications are managed through a dedicated service
+Local storage operations are abstracted into a StorageService
+The app uses a stack navigator for screen navigation
+Please help me create this project in Xcode, providing the necessary code and configuration files, including proper folder structure and dependencies. The app should maintain state between sessions and handle offline/online synchronization with Firebase."
+Key code references to maintain consistency:
+Firebase config and app initialization:
+Theme configuration:
+Navigation structure:
+Dependencies needed (from package.json):
